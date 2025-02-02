@@ -7,18 +7,35 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
+  <header class="header">
+    <div class="container">
+      <h1 class="app-title">Quiz App</h1>
+      <nav class="nav">
+        <a href="index.html" class="nav-btn">Home</a>
+        <a href="about.html" class="nav-btn">About</a>
+        <a href="#features" class="nav-btn">Features</a>
+        <a href="#contact" class="nav-btn">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container quiz-container">
     <h1 id="quiz-title">Quiz</h1>
     <div id="quiz-container">
-      <p id="question">Question will appear here</p>
+      <p id="question">Loading question...</p>
       <div id="options">
         <!-- Options dynamically added here -->
       </div>
-      <button id="next-btn" class="hidden">Next</button>
+      <button id="next-btn" class="hidden" disabled>Next</button>
     </div>
     <p id="score" class="hidden">Your Score: <span id="score-value"></span></p>
     <a href="index.html" id="home-btn" class="hidden">Back to Home</a>
   </div>
+
+  <footer class="footer">
+    <p>© 2025 Quiz App. All rights reserved.</p>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
